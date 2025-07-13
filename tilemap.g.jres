@@ -184,21 +184,6 @@
         ],
         "displayName": "Casa cofre abierto"
     },
-    "nivel3": {
-        "id": "nivel3",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYTAwMDgwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDQwNDA2MDYwNDA0MDEwMTAxMDEwNDAyMDIwMjA1MDQwMTAxMDEwMTA0MDIwMzAyMDIwNDAxMDEwMTAxMDQwMjAyMDIwMjA0MDEwMTAxMDEwNDA0MDQwNDA0MDQwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDIyMjIyMjAyMDAyMDIyMjIwMjAyMjAyMjIyMDIwMDIwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "myTiles.tile4",
-            "myTiles.tile6",
-            "myTiles.tile21",
-            "sprites.builtin.brick",
-            "myTiles.tile22",
-            "myTiles.tile23"
-        ],
-        "displayName": "nivel3"
-    },
     "nivel2": {
         "id": "nivel2",
         "mimeType": "application/mkcd-tilemap",
@@ -256,6 +241,35 @@
             "sprites.dungeon.purpleInnerSouthWest"
         ],
         "displayName": "ciudad"
+    },
+    "casa del vecino1": {
+        "id": "casa del vecino1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAwYTAwMDgwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDMwMzA1MDUwMzAzMDEwMTAxMDEwMzAyMDIwMjA0MDMwMTAxMDEwMTAzMDIwMjAyMDIwMzAxMDEwMTAxMDMwMjAyMDIwMjAzMDEwMTAxMDEwMzAzMDMwMzAzMDMwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDIyMjIyMjAyMDAyMDIyMjIwMjAwMjAyMjIyMDIwMDIwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile4",
+            "myTiles.tile6",
+            "sprites.builtin.brick",
+            "myTiles.tile22",
+            "myTiles.tile23"
+        ],
+        "displayName": "bye bye vecino"
+    },
+    "nivel3": {
+        "id": "nivel3",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAwYTAwMDgwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDQwNDA2MDYwNDA0MDEwMTAxMDEwNDAyMDIwMjA1MDQwMTAxMDEwMTA0MDIwMjAyMDIwNDAxMDEwMTAxMDQwMzAyMDIwMjA0MDEwMTAxMDEwNDA0MDQwNDA0MDQwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDIyMjIyMjAyMDAyMDIyMjIwMjAwMjAyMjIyMDIwMDIwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile4",
+            "myTiles.tile6",
+            "myTiles.tile21",
+            "sprites.builtin.brick",
+            "myTiles.tile22",
+            "myTiles.tile23"
+        ],
+        "displayName": "casa del vecino"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
