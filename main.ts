@@ -6,6 +6,12 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterNorth1, functi
     tiles.setCurrentTilemap(tilemap`casa del vecino`)
     mySprite.setPosition(85, 70)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico42`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`6 por 4 igual 24`)
+    scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+    info.changeScoreBy(1)
+    music.play(music.createSoundEffect(WaveShape.Triangle, 400, 600, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico19`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`bye bye vecino`)
     scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
@@ -58,6 +64,10 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.field1, function (sprite,
     tiles.setCurrentTilemap(tilemap`Casa cofre cerrado`)
     mySprite.setPosition(85, 85)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico43`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Ciudad`)
+    mySprite.setPosition(127, 175)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico21`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Ciudad`)
     mySprite.setPosition(400, 175)
@@ -67,6 +77,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico38`, function (sprit
     scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
     info.changeScoreBy(1)
     music.play(music.createSoundEffect(WaveShape.Triangle, 400, 600, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterNorth0, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`6 por 4`)
+    mySprite.setPosition(85, 70)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico24`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Ciudad`)
