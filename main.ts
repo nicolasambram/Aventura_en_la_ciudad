@@ -1,3 +1,23 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico4`, function (sprite, location) {
+    mySprite.setImage(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . c c c c . . . . . . . . 
+        . . c c 5 5 5 5 c c . . . . . . 
+        . c 5 5 5 5 5 5 5 5 c . . . . . 
+        c 5 5 5 5 5 1 f 5 5 5 c . . . . 
+        c 5 5 5 5 5 f f 5 5 5 5 c . . . 
+        c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+        c c b b 1 b 5 5 5 5 5 5 d c . . 
+        c 5 3 3 3 5 5 5 5 5 d d d c . . 
+        . b 5 5 5 5 5 5 5 5 d d d c . . 
+        . . c b b c 5 5 b d d d d c c . 
+        . c b b c 5 5 b b d d d d c d c 
+        . c c c c c c d d d d d d d d c 
+        . . . c c c c d 5 5 b d d d c . 
+        . . c c c c c b 5 5 b c c c . . 
+        . . c b b b c d 5 5 b c . . . . 
+        `)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.field0, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Ciudad`)
     mySprite.setPosition(400, 120)
@@ -18,7 +38,109 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico19`, function (sprit
     info.changeScoreBy(1)
     music.play(music.createSoundEffect(WaveShape.Triangle, 400, 600, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
 })
-info.onScore(4, function () {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico20`, function (sprite, location) {
+    mySprite.setImage(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . c c c c . . . . . . . . 
+        . . c c 5 5 5 5 c c . . . . . . 
+        . c 5 5 5 5 5 5 5 5 c . . . . . 
+        c 5 5 5 5 5 5 5 5 5 5 c . . . . 
+        c 5 5 5 5 f f f 5 5 5 5 c . . . 
+        c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+        c c b b 1 b 5 5 5 5 5 5 d c . . 
+        c 5 3 3 3 5 5 5 5 5 d d d c . . 
+        . b 5 5 5 5 5 5 5 5 d d d c . . 
+        . . c b b c 5 5 b d d d d c c . 
+        . c b b c 5 5 b b d d d d c d c 
+        . c c c c c c d d d d d d d d c 
+        . . . c c c c d 5 5 b d d d c . 
+        . . c c c c c b 5 5 b c c c . . 
+        . . c b b b c d 5 5 b c . . . . 
+        `)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico6`, function (sprite, location) {
+    mySprite.setImage(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . c c c c . . . . . . . . 
+        . . c c 5 5 5 5 c c . . . . . . 
+        . c 5 5 5 5 5 5 5 5 c . . . . . 
+        c 5 5 5 5 5 5 5 5 5 5 c . . . . 
+        c 5 5 5 5 f f f 5 5 5 5 c . . . 
+        c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+        c c b b 1 b 5 5 5 5 5 5 d c . . 
+        c 5 3 3 3 5 5 5 5 5 d d d c . . 
+        . b 5 5 5 5 5 5 5 5 d d d c . . 
+        . . c b b c 5 5 b d d d d c c . 
+        . c b b c 5 5 b b d d d d c d c 
+        . c c c c c c d d d d d d d d c 
+        . . . c c c c d 5 5 b d d d c . 
+        . . c c c c c b 5 5 b c c c . . 
+        . . c b b b c d 5 5 b c . . . . 
+        `)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+    info.changeScoreBy(1)
+})
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    scaling.scaleByPixels(mySprite, -1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+    info.changeScoreBy(-1)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico23`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`casa abandonada`)
+    mySprite.setPosition(80, 65)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Casa cofre abierto`)
+})
+info.onScore(0, function () {
+    mySprite.setImage(assets.image`bnxxxxxxx`)
+})
+info.onScore(-1, function () {
+    mySprite.setImage(assets.image`miImagen`)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.field1, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Casa cofre cerrado`)
+    mySprite.setPosition(85, 85)
+})
+info.onScore(3, function () {
+    mySprite.setImage(assets.image`bnxxxxxxx`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico43`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Ciudad`)
+    mySprite.setPosition(127, 175)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico21`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Ciudad`)
+    mySprite.setPosition(400, 175)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico38`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`casa abandonada2`)
+    scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
+    info.changeScoreBy(1)
+    music.play(music.createSoundEffect(WaveShape.Triangle, 400, 600, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico5`, function (sprite, location) {
+    mySprite.setImage(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . c c c c . . . . . . . . 
+        . . c c 5 5 5 5 c c . . . . . . 
+        . c 5 5 5 5 5 5 5 5 c . . . . . 
+        c 5 5 5 5 5 5 5 5 5 5 c . . . . 
+        c 5 5 5 5 f f f 5 5 5 5 c . . . 
+        c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+        c c b b 1 b 5 5 5 5 5 5 d c . . 
+        c 5 3 3 3 5 5 5 5 5 d d d c . . 
+        . b 5 5 5 5 5 5 5 5 d d d c . . 
+        . . c b b c 5 5 b d d d d c c . 
+        . c b b c 5 5 b b d d d d c d c 
+        . c c c c c c d d d d d d d d c 
+        . . . c c c c d 5 5 b d d d c . 
+        . . c c c c c b 5 5 b c c c . . 
+        . . c b b b c d 5 5 b c . . . . 
+        `)
+})
+info.onScore(5, function () {
     mySprite.setImage(img`
         ........................
         ........................
@@ -45,38 +167,6 @@ info.onScore(4, function () {
         ...cccccccbdddbccc......
         ........cd555ddc........
         `)
-})
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
-    info.changeScoreBy(1)
-})
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    scaling.scaleByPixels(mySprite, -1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico23`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`casa abandonada`)
-    mySprite.setPosition(80, 65)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`Casa cofre abierto`)
-})
-scene.onOverlapTile(SpriteKind.Player, sprites.builtin.field1, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`Casa cofre cerrado`)
-    mySprite.setPosition(85, 85)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico43`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`Ciudad`)
-    mySprite.setPosition(127, 175)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico21`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`Ciudad`)
-    mySprite.setPosition(400, 175)
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`miMosaico38`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`casa abandonada2`)
-    scaling.scaleByPixels(mySprite, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
-    info.changeScoreBy(1)
-    music.play(music.createSoundEffect(WaveShape.Triangle, 400, 600, 255, 0, 100, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleOuterNorth0, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`6 por 4`)

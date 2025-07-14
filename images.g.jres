@@ -9,6 +9,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "bnxxxxxxx"
     },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsLvMDAAAALDbvdvLAACwGxEz290MALARETPd3csAGxETEdG7zQAbERER0bvNABszERHR3c0AGzMTEbPbzQCwMRMxs9vLALAbETG73QwAALDb3d3LAAAAALC7zAwAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "miImagen"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD/7/4PAAAAIuIi7i4PAMLMzCxL3eIgQkQkskzSLSAkIiLLTCIiICQiIstMIiIgIiIiy0wiIiAiIiLLTCIiICIiIrJM0i0AwszMLEvd4gAAIuIi7i4PAADg/+/+/wAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "miImagen0"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P//7u7/DwAiIiIi4u7/4MwiwuzuLf4uQkQkzuveDi4iIkK86+4OLCIiQrzr7g4sIiIivOvuDi4iIiK86+4OLiIiIs7r3g7gzCzC7O4t/gAiIiIi4u7/AOD//+7u/w8AAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "limonagrio punto com"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAAAO7u7u7uAADgm5m57u4PAL6Zmevu/vzgQkTivuL+vC4iIuS74v67LiIi5O7u7g8uIiLku+LuDi4iQuS74u4OLiJE5Lvi7g/gQkTivuL+/OCemZnr7v68AO6Zmenu/rsAAC4i4uPuDwAALiLiM+4OAADgIiI+7g4AAADu7u7uAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "miImagen1"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
